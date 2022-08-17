@@ -30,9 +30,11 @@ class JogadorController
 
         $model->id = $_POST['id'];
         $model->nome = $_POST['nome'];
+        $model->apelido = $_POST['apelido'];
         $model->data_nascimento = $_POST['data_nascimento'];
         $model->altura = $_POST['altura'];
         $model->peso = $_POST['peso'];
+        $model->link = $_POST['link'];
         $model->id_posicao = $_POST['posicao'];
         $model->id_pais = $_POST['pais'];
         $model->id_time_pais = $_POST['time_pais'];

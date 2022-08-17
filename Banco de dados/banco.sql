@@ -26,9 +26,11 @@ CREATE TABLE time_pais (
 CREATE TABLE jogador (
     id INT AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
+    apelido VARCHAR(100) NOT NULL,
     data_nascimento DATE NOT NULL,
     altura DOUBLE NOT NULL,
     peso DOUBLE NOT NULL,
+    link VARCHAR(250) NOT NULL,
     id_posicao INT,
     id_pais INT,
     id_time_pais INT,

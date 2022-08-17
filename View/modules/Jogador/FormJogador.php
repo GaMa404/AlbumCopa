@@ -21,6 +21,11 @@
 
             <br>
 
+            <label for="apelido"> Apelido: </label>
+            <input type="text" name="apelido" id="apelido" value="<?= $model->apelido ?>" />
+
+            <br>
+
             <label for="data_nascimento"> Data de Nascimento: </label>
             <input type="date" name="data_nascimento" id="data_nascimento" value="<?= $model->data_nascimento ?>" />
 
@@ -31,10 +36,15 @@
 
             <br>
 
-            <label for="peso"> Peso: </peso>
+            <label for="peso"> Peso: </label>
             <input type="double" name="peso" id="peso" value="<?= $model->peso ?>" />
 
             <br>
+
+            <label for="link"> Foto do jogador: </label>
+            <input type="file" name="link" id="link" value="<?= $model->link ?>" />
+
+            <br>  
 
             <label for="posicao"> Posição: </label>
             <select name="posicao">
