@@ -1,15 +1,23 @@
+body
+{
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .card-container
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 100px;
-    gap: 130px;
+    gap: 55px;
+    
 }
 
 .card 
 {
-    height: 306px;
-    width: 500px;
+    height: 310px;
+    width: 505px;
     border: 2px solid red;
     border-radius: 15px;
     background-image: url(fundo-card.jpg);
@@ -27,9 +35,22 @@
     border-radius: 10px;
 } 
 
-a
+.card-text
 {   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
     text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.botao-deletar
+{
+    font-size: 20px;
+    color: red;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
 }

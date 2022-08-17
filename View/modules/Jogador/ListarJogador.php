@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Jogadores</title>
     <link rel="stylesheet" href="style_jogador.css" class="css">
+    
 </head>
 <body>
     <div class="card-container">
         <?php foreach($model->rows as $item): ?>
+            <a href="/jogador/delete?id=<?= $item['id'] ?>" class="botao-deletar"> X </a>
             <div class="card">
                 <img class="imagem" src="<?= $item['link'] ?>" />
-                <h2> <a href="jogador/form?id=<?= $item['id'] ?>"><?= $item['apelido'] ?> </a> </h2>               
-                <p> <b> Nome: </b> <?= $item['nome'] ?> </p>
-                <p> <b> Data de nascimento: </b> <?= $item['data_nascimento'] ?> </p>
-                <p> <b> Altura: </b> <?= $item['altura'] ?> m </p>
-                <p> <b> Peso: </b> <?= $item['peso'] ?> Kg </p>
-                <p> <b> Posição: </b> <?= $item['posicao'] ?> (<?= $item['sigla_posicao'] ?>) </p>
-                <p> <b> País: </b> <?= $item['pais'] ?> (<?= $item['sigla_pais'] ?>) </p>
-                <p> <b> Time: </b> <?= $item['time_pais'] ?> </p>
+                <div class="card-text"> 
+                    <h2> <a href="jogador/form?id=<?= $item['id'] ?>"> <?= $item['apelido'] ?> </a> </h2>             
+                    <p> <b> Nome: </b> <?= $item['nome'] ?> </p>
+                    <p> <b> Data de nascimento: </b> <?= $item['data_nascimento'] ?> </p>
+                    <p> <b> Altura: </b> <?= $item['altura'] ?> m </p>
+                    <p> <b> Peso: </b> <?= $item['peso'] ?> Kg </p>
+                    <p> <b> Posição: </b> <?= $item['posicao'] ?> (<?= $item['sigla_posicao'] ?>) </p>
+                    <p> <b> País: </b> <?= $item['pais'] ?> (<?= $item['sigla_pais'] ?>) </p>
+                    <p> <b> Time: </b> <?= $item['time_pais'] ?> </p>
+                </div>
             </div>
         <?php endforeach ?>
     </div>
