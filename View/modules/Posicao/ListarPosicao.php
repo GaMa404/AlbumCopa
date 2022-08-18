@@ -38,6 +38,6 @@
                 <td colspan="5"> Nenhum registro encontrado. </td>
             </tr>
         <?php endif ?>
-    </table>    
+    </table>
 </body>
 </html>

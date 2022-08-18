@@ -1,7 +1,6 @@
 body
 {
-    background-color: black;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
 }
 
@@ -11,18 +10,17 @@ body
     flex-wrap: wrap;
     flex-direction: row;
     gap: 55px;
-    
+    justify-content: space-around;
 }
 
-.card 
+.card-jogador
 {
     height: 310px;
     width: 505px;
     border: 2px solid red;
     border-radius: 15px;
-    background-image: url(fundo-card.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(255,40,7,0.7987570028011204) 65%);
 }
 
 .imagem
@@ -41,16 +39,40 @@ body
     text-decoration: none;
     text-align: center;
     color: white;
+    
+}
+
+.card-text p
+{
+    height: 22px;
+}
+
+.delete-container{
+    width: 100%;
+    height: 1px;
+    text-align: end;
+    margin-left: -10px;
 }
 
 .botao-deletar
 {
     font-size: 20px;
-    color: red;
+    color: white;
+    text-align: end;
 }
 
 a
 {
     text-decoration: none;
     color: black;
+}
+
+p
+{
+    color:white;
+}
+
+.navbar
+{
+    background-color: white;
 }

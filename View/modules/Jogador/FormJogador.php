@@ -68,7 +68,7 @@
 
             <br> <br>       
 
-            <label for="time_pais"> País: </label>
+            <label for="time_pais"> Time: </label>
             <select name="time_pais">
                 <?php foreach($model->lista_time_pais as $time_pais):?>
                     <option value="<?= $time_pais['id']?>" <?= ($time_pais['id'] == $model->id_time_pais) ? 'selected' : " " ?> >
