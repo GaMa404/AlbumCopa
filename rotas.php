@@ -78,4 +78,8 @@ switch($uri_parse)
     case '/jogador/delete':
         JogadorController::delete();
     break;
+
+    default:
+        echo "Error 404: Página não encontrada.";
+    break;  
 }
