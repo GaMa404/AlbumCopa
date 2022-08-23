@@ -1,5 +1,9 @@
 <?php
 
+namespace AlbumCopa\Controller;
+
+use AlbumCopa\Model\PaisModel;
+
 class PaisController
 {
     public static function index()

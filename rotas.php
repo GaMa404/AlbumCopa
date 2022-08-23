@@ -7,6 +7,30 @@ include 'Controller/PaisController.php';
 include 'Controller/TimePaisController.php';
 include 'Controller/PosicaoController.php';
 
+use AlbumCopa\Controller\
+{
+    PosicaoController,
+    PaisController,
+    TimePaisController,
+    JogadorController
+};
+
+use AlbumCopa\Model\
+{
+    PosicaoModel,
+    PaisModel,
+    TimePaisModel,
+    JogadorModel
+};
+
+use AlbumCopa\DAO\
+{
+    PosicaoDAO,
+    PaisDAO,
+    TimePaisDAO,
+    JogadorDAO
+};
+
 switch($uri_parse)
 {
     case '/posicao':

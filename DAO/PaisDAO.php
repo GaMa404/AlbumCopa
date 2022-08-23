@@ -1,5 +1,9 @@
 <?php 
 
+namespace AlbumCopa\DAO;
+
+use AlbumCopa\Model\PaisModel;
+
 class PaisDAO
 {
     private $conexao;

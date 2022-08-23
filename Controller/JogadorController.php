@@ -1,5 +1,9 @@
 <?php
 
+namespace AlbumCopa\Controller;
+
+use AlbumCopa\Model\JogadorModel;
+
 class JogadorController
 {
     public static function index()

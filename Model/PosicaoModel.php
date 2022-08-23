@@ -1,5 +1,9 @@
 <?php
 
+namespace AlbumCopa\Model;
+
+use AlbumCopa\DAO\PosicaoDAO;
+
 class PosicaoModel
 {
     public $id, $nome, $sigla;

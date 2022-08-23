@@ -1,5 +1,13 @@
 <?php
 
+namespace AlbumCopa\Model;
+
+use AlbumCopa\DAO\
+{
+    PaisDAO,
+    TimePaisDAO
+};
+
 class TimePaisModel
 {
     public $id, $nome, $id_pais;

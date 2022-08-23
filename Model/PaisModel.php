@@ -1,5 +1,9 @@
 <?php
 
+namespace AlbumCopa\Model;
+
+use AlbumCopa\DAO\PaisDAO;
+
 class PaisModel
 {
     public $id, $nome, $sigla;

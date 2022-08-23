@@ -1,5 +1,10 @@
 <?php
 
+namespace AlbumCopa\DAO;
+
+use AlbumCopa\DAO\MySQL;
+use AlbumCopa\Model\PosicaoModel;
+
 class PosicaoDAO
 {
     private $conexao;

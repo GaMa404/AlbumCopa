@@ -1,5 +1,9 @@
 <?php
 
+namespace AlbumCopa\DAO;
+
+use \PDO;
+
 class MySQL extends PDO
 {
     public $dsn = 'mysql:host=localhost:3307;dbname=db_copa';

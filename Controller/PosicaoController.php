@@ -1,5 +1,9 @@
 <?php
 
+namespace AlbumCopa\Controller;
+
+use AlbumCopa\Model\PosicaoModel;
+
 class PosicaoController
 {
     public static function index()

@@ -44,7 +44,6 @@
         <?php foreach($model->rows as $item): ?>
             
             <div class="card-jogador">
-                
                 <img class="imagem" src="<?= $item['link'] ?>" />
                 <div class="card-text"> 
                     <div class="delete-container">

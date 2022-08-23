@@ -1,5 +1,9 @@
 <?php
 
+namespace AlbumCopa\Controller;
+
+use AlbumCopa\Model\TimePaisModel;
+
 class TimePaisController
 {
     public static function index()
