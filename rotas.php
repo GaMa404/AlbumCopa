@@ -15,24 +15,12 @@ use AlbumCopa\Controller\
     JogadorController
 };
 
-use AlbumCopa\Model\
-{
-    PosicaoModel,
-    PaisModel,
-    TimePaisModel,
-    JogadorModel
-};
-
-use AlbumCopa\DAO\
-{
-    PosicaoDAO,
-    PaisDAO,
-    TimePaisDAO,
-    JogadorDAO
-};
-
 switch($uri_parse)
 {
+    case '/':
+        include 'View/modules/Home/home.php';
+    break;
+
     case '/posicao':
         PosicaoController::index();
     break;

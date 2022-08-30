@@ -1,0 +1,70 @@
+body
+{
+    width: 100vw;
+    height: 100vh;  
+}
+
+.background-home
+{
+    z-index: 0;
+    position: fixed;
+    top: 545px;
+}
+
+.background-home img
+{
+    height: 50vh;  
+}
+
+.navbar
+{
+    background-color: white;
+}
+
+.navbar-brand
+{
+    font-size: 35px;
+    margin-right: 150px;
+    margin-left: 200px;
+}
+
+
+.titulo-container
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+.titulo
+{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+.titulo h1 
+{
+    color: #F0E68C;
+    font-size: 200px;
+    text-shadow: 0.1em 0.1em 0.1em #808080;    
+}
+
+.imagem-container
+{
+    
+    margin-top: 100px;
+}
+
+.imagem-container img
+{
+    width: 400px;
+    height: 400px;
+    margin-left: 70px;
+    opacity: 80%;
+    position: relative;
+    z-index: 1;
+}

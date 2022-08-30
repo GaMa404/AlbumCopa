@@ -10,6 +10,7 @@ use AlbumCopa\DAO\
     JogadorDAO
 };
 
+
 class JogadorModel
 {
     public $id, $nome, $apelido, $data_nascimento, $altura, $peso, $link, $id_posicao, $id_pais, $id_time_pais;

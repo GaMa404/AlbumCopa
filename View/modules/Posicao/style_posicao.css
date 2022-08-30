@@ -1,0 +1,75 @@
+body
+{
+    width: 100vw;
+    height: 100vh;  
+}
+
+.background-posicao
+{
+    z-index: 0;
+    position: fixed;
+    top: 545px;
+}
+
+.background-posicao img
+{
+    height: 50vh;  
+}
+
+.navbar
+{
+    background-color: white;
+}
+
+.navbar-brand
+{
+    font-size: 35px;
+    margin-right: 50px;
+    margin-left: 15px;
+}
+
+.nav-link
+{
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.titulo-posicao
+{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.posicao-container
+{
+    z-index: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.posicao-container a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    color: #6495ED;
+}
+
+th
+{
+    font-size: 80px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+td 
+{
+    font-size: 50px;
+    padding-left: 0px;
+    text-align: center;    
+}
