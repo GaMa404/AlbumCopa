@@ -17,23 +17,25 @@ class PaisDAO
 
     public function insert(PaisModel $model)
     {
-        $sql = 'INSERT INTO pais (nome, sigla) VALUES (?, ?)';
+        $sql = 'INSERT INTO pais (nome, sigla, link) VALUES (?, ?, ?)';
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->sigla);
+        $stmt->bindValue(3, $model->link);
 
         $stmt->execute();
     }
 
     public function update(PaisModel $model)
     {
-        $sql = 'UPDATE pais SET nome=?, sigla=? WHERE id=?';
+        $sql = 'UPDATE pais SET nome=?, sigla=?, link=? WHERE id=?';
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->sigla);
-        $stmt->bindValue(3, $model->id);
+        $stmt->bindValue(3, $model->link);
+        $stmt->bindValue(4, $model->id);
 
         $stmt->execute();
     }

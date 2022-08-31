@@ -25,8 +25,8 @@
               Outros
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/pais">País</a>
               <a class="dropdown-item" href="/posicao">Posição</a>
+              <a class="dropdown-item" href="/pais">País</a>
               <a class="dropdown-item" href="/time_pais">Time</a>
             </div>
           </li>
@@ -46,7 +46,7 @@
                         <a href="/jogador/delete?id=<?= $item['id'] ?>" class="botao-deletar"> X </a>
                     </div>
                    
-                    <h2> <a href="jogador/form?id=<?= $item['id'] ?>"> <?= $item['apelido'] ?> </a> </h2>             
+                    <h2> <a href="/jogador/form?id=<?= $item['id'] ?>"> <?= $item['apelido'] ?> </a> </h2>             
                     <p> <b> Nome: </b> <?= $item['nome'] ?> </p>
                     <p> <b> Data de nascimento: </b> <?= $item['data_nascimento'] ?> </p>
                     <p> <b> Altura: </b> <?= $item['altura'] ?> m </p>

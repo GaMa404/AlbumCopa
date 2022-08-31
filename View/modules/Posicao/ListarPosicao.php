@@ -48,11 +48,13 @@
             <?php foreach($model->rows as $item): ?>
                 <tr>
                     <td>
-                        <a href="/posicao/delete?id=<?= $item['id'] ?>"> X </a>
+                        <div class="deletar">
+                          <a href="/posicao/delete?id=<?= $item['id'] ?>"> X </a>
+                        </div>
                     </td> 
 
                     <td>
-                        <a href="posicao/form?id=<?= $item['id'] ?>"><?= $item['nome'] ?> </a>
+                        <a href="/posicao/form?id=<?= $item['id'] ?>"><?= $item['nome'] ?> </a>
                     </td>
 
                     <td>

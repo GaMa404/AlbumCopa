@@ -26,6 +26,11 @@
 
             <br>
 
+            <label for="link"> Bandeira do país: </label>
+            <input type="file" name="link" id="link" value="<?= $model->link ?>" /> 
+
+            <br>
+
             <button type="submit"> Enviar </button>
         </fieldset>
     </form>

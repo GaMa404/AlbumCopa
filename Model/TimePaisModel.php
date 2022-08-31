@@ -10,7 +10,7 @@ use AlbumCopa\DAO\
 
 class TimePaisModel
 {
-    public $id, $nome, $id_pais;
+    public $id, $nome, $link, $id_pais;
     
     public $lista_pais;
 

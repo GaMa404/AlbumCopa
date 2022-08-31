@@ -6,7 +6,7 @@ use AlbumCopa\DAO\PaisDAO;
 
 class PaisModel
 {
-    public $id, $nome, $sigla;
+    public $id, $nome, $sigla, $link;
 
     public $rows;
 

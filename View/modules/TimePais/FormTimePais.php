@@ -21,6 +21,11 @@
 
             <br>
 
+            <label for="link"> Logo do time: </label>
+            <input type="file" name="link" id="link" value="<?= $model->link ?>" /> 
+
+            <br>
+
             <label for="pais"> País: </label>
             <select name="pais">
                 <?php foreach($model->lista_pais as $pais):?>

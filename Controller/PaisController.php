@@ -31,6 +31,7 @@ class PaisController
         $model->id = $_POST['id'];
         $model->nome = $_POST['nome'];
         $model->sigla = $_POST['sigla'];
+        $model->link = $_POST['link'];
         $model->save();
 
         header("Location: /pais");

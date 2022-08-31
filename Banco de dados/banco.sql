@@ -12,12 +12,14 @@ CREATE TABLE pais (
     id INT AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
     sigla CHAR(3),
+    link VARCHAR(250) NOT NULL,
     PRIMARY KEY (id)
 );
 
 CREATE TABLE time_pais (
     id INT AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
+    link VARCHAR(250) NOT NULL,
     id_pais INT,
     PRIMARY KEY (id),
     FOREIGN KEY (id_pais) REFERENCES pais(id)

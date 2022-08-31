@@ -32,6 +32,7 @@ class TimePaisController
 
         $model->id = $_POST['id'];
         $model->nome = $_POST['nome'];
+        $model->link = $_POST['link'];
         $model->id_pais = $_POST['pais'];
         
         $model->save();

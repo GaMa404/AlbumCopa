@@ -4,14 +4,14 @@ body
     height: 100vh;  
 }
 
-.background-posicao
+.background-time
 {
     z-index: 0;
     position: fixed;
     top: 545px;
 }
 
-.background-posicao img
+.background-time img
 {
     height: 50vh;  
 }
@@ -34,14 +34,14 @@ body
     margin-right: 30px;
 }
 
-.titulo-posicao
+.titulo-time
 {
     text-align: center;
     font-size: 80px;
     margin-bottom: 10px;
 }
 
-.posicao-container
+.time-container
 {
     z-index: 1;
     display: flex;
@@ -50,7 +50,7 @@ body
     margin-right: 50px;
 }
 
-.posicao-container a 
+.time-container a 
 {
     text-decoration: none;
     color: black;
@@ -77,5 +77,12 @@ td
 {
     font-size: 50px;
     padding-left: 0px;
-    text-align: center;    
+    text-align: center;   
+    padding-top: 20px; 
+}
+
+.imagem-bandeira img
+{
+    width: 200px;
+    height: 120px;
 }
