@@ -45,7 +45,7 @@ class TimePaisDAO
 
     public function select()
     {
-        $sql = 'SELECT tp.id, tp.nome, tp.link, pa.nome AS pais
+        $sql = 'SELECT tp.id, tp.nome, tp.link, pa.nome AS pais, pa.link AS link_bandeira
                 FROM time_pais tp
                 JOIN pais pa ON (pa.id = tp.id_pais)';
 
@@ -59,7 +59,8 @@ class TimePaisDAO
     {
         include_once 'Model/TimePaisModel.php';
 
-        $sql = 'SELECT tp.id, tp.nome, tp.link, tp.id_pais, pa.nome AS pais
+        $sql = 'SELECT tp.id, tp.nome, tp.link, tp.id_pais, pa.nome AS pais,
+                pa.link AS link_bandeira
                 FROM time_pais tp
                 JOIN pais pa ON (pa.id = tp.id_pais)
                 WHERE tp.id=?';
@@ -68,7 +69,15 @@ class TimePaisDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("TimePaisModel");
+        return $stmt->fetchObject();
+    }
+
+    public function selectByPais(int $id)
+    {
+        include_once 'Model/PaisModel.php';
+
+        $sql = 'SELECT pa.nome AS pais, pa.link AS link_bandeira
+                FROM pais pa';
     }
 
     public function delete(int $id)

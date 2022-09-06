@@ -93,7 +93,7 @@ class JogadorDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("JogadorModel");
+        return $stmt->fetchObject();
     }
 
     public function delete(int $id)

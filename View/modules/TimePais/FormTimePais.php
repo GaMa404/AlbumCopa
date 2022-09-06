@@ -14,7 +14,7 @@
         <fieldset>
             <legend> Cadastro de times de cada país </legend>
 
-            <input type="hidden" value="<?= $model->id ?>" name=id />
+            <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome"> Nome: </label>
             <input type="text" name="nome" id="nome" value="<?= $model->nome ?>" />
@@ -22,7 +22,7 @@
             <br>
 
             <label for="link"> Logo do time: </label>
-            <input type="file" name="link" id="link" value="<?= $model->link ?>" /> 
+            <input type="file" name="link" id="link" value="<?= $model->link ?>"  /> 
 
             <br>
 

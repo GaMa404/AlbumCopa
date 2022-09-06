@@ -60,7 +60,7 @@ class PaisDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("PaisModel");
+        return $stmt->fetchObject();
     }
 
     public function delete(int $id)

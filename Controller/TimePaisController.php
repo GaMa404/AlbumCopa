@@ -2,6 +2,7 @@
 
 namespace AlbumCopa\Controller;
 
+use AlbumCopa\Model\PaisModel;
 use AlbumCopa\Model\TimePaisModel;
 
 class TimePaisController
@@ -17,12 +18,15 @@ class TimePaisController
     public static function form()
     {
         $model = new TimePaisModel();
-
+        
         if(isset($_GET['id']))
-            $model = $model->getById( (int) $_GET['id']);
+            $model = $model->getById( (int) $_GET['id']);                    
 
-        $model->lista_pais = $model->getAllPais();
+        
+        $model_pais = new PaisModel();
 
+        $model->lista_pais = $model_pais->getAllRows();
+      
         include 'View/modules/TimePais/FormTimePais.php';
     }
 

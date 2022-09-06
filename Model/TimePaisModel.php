@@ -50,7 +50,7 @@ class TimePaisModel
     {
         $dao = new TimePaisDAO();
 
-        $obj = $dao->selectById($id);
+        $obj = $dao->selectById($id);        
 
         return ($obj) ? $obj : new TimePaisModel();
     }

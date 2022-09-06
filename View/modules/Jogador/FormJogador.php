@@ -14,7 +14,7 @@
         <fieldset>
             <legend> Cadastro de jogadores </legend>
 
-            <input type="hidden" value="<?= $model->id ?>" name=id />
+            <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome"> Nome: </label>
             <input type="text" name="nome" id="nome" value="<?= $model->nome ?>" />

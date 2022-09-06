@@ -60,7 +60,7 @@ class PosicaoDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("PosicaoModel");
+        return $stmt->fetchObject();
     }
 
     public function delete(int $id)

@@ -34,6 +34,13 @@ class PaisModel
         $this->rows = $dao->select();
     }
 
+    public function getAllRowsByPais()
+    {
+        $dao = new PaisDAO();
+
+        $this->rows = $dao->select();
+    }
+
     public function getById(int $id)
     {
         $dao = new PaisDAO();

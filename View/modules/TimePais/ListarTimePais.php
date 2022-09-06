@@ -59,7 +59,15 @@
                     </td>
 
                     <td>
-                        <img src="View/modules/TimePais/logos/<?= $item['link'] ?>" >
+                        <div class="logo-time">
+                          <img src="View/modules/TimePais/logos/<?= $item['link'] ?>" >
+                        </div>
+                    </td>
+
+                    <td>
+                      <div class="bandeira">
+                        <img src="View/modules/Pais/bandeiras/<?=$item['link_bandeira'] ?>" >
+                      </div>
                     </td>
                 
                 </tr>
