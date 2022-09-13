@@ -72,14 +72,6 @@ class TimePaisDAO
         return $stmt->fetchObject();
     }
 
-    public function selectByPais(int $id)
-    {
-        include_once 'Model/PaisModel.php';
-
-        $sql = 'SELECT pa.nome AS pais, pa.link AS link_bandeira
-                FROM pais pa';
-    }
-
     public function delete(int $id)
     {
         $sql = 'DELETE FROM time_pais WHERE id=?';

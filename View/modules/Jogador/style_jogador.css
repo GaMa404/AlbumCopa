@@ -29,17 +29,18 @@ body
 
 .card-jogador
 {
-    height: 310px;
+    height: 400px;
     width: 505px;
     border: 2px solid #6A5ACD;
     border-radius: 15px;
     background-color: #F0E68C;
 }
 
+
 .imagem
 {
     float: left;
-    height: 300px; 
+    height: 390px; 
     width: 250px;
     margin: 1px;
     border: 2px solid #FFFFF0;
@@ -51,6 +52,7 @@ body
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     text-align: center;
+    margin-top: 30px;
 }
 
 .card-text p
