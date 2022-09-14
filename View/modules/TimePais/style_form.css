@@ -4,14 +4,14 @@ body
     height: 100vh;  
 }
 
-.background-pais
+.background-time
 {
     z-index: 0;
     position: fixed;
     top: 545px;
 }
 
-.background-pais img
+.background-time img
 {
     height: 50vh;  
 }
@@ -40,13 +40,14 @@ body
     display: flex;
     position: relative;
     justify-content: center;
-    font-size: 35px;
+    font-size: 50px;
+    padding-left: 300px;
 }
 
 .container legend
 {
     font-size: 50px;
-    margin-left: 280px;
+    margin-left: 180px;
 }
 
 .container button
@@ -57,10 +58,11 @@ body
     background-color: #6A5ACD;
     color: white;
     width: 300px;
-    margin-left: 300px;
+    margin-left: 200px;
 }
 
 .container-input
 {
-    margin-left: 250px;
+    margin-left: 100px;
+    justify-content: center;
 }
