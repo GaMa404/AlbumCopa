@@ -60,7 +60,7 @@ class PosicaoDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject();
+        return $stmt->fetchObject("AlbumCopa\Model\PaisModel");
     }
 
     public function delete(int $id)
